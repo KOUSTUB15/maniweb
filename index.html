@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile & Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("aa.jpg");
+			background-size:cover;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+        .profile-box {
+            background-image: url("vote3.jpg");
+			background-size:cover;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .profile-box img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .profile-box h2 {
+            margin: 10px 0 5px;
+        }
+        .profile-box p {
+            margin: 5px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        /* Resume Page */
+        .resume-section {
+             background-image: url("vv.avif");
+			background-size:cover;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .resume-section h2 {
+            text-transform: uppercase;
+            border-bottom: 2px solid #000;
+            padding-bottom: 7px;
+            margin-bottom: 20px;
+        }
+        .download-btn {
+            background: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .download-btn:hover {
+            background: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="mainPage">
+        <div class="profile-box">
+            <img src="mani.jpg" alt="mani.jpg" />
+            <h2>Mani Kolekar</h2>
+            <p>USN: 2MM23CS028</p>
+            <p>Branch: Computer Science</p>
+            <p>Batch: 2023 - 2027</p>
+            <a href="#" class="btn" onclick="openResume()">View Resume</a>
+        </div>
+    </div>
+
+    <div class="container" id="resumePage" style="display:none;">
+        <div class="resume-section">
+            <img src="mani.jpg" alt="Profile Picture" style="width:120px; height:120px; border-radius:50%; display:block; margin:auto;" />
+            <h2>Contact</h2>
+            <p>Email: manikole@gmail.com</p>
+            <p>Phone: +91 9448765604</p>
+
+            <h2>Skills</h2>
+            <p>HTML, CSS, JavaScript, Python, Java</p>
+
+            <h2>Education</h2>
+            <p>Bachelor of Engineering - Computer Science</p>
+
+            <h2>Experience</h2>
+            <p>Intern at XYZ Company</p>
+
+            <h2>Languages</h2>
+            <p>English, Hindi, Kannada,Marathi, Urdu<p>
+
+            <a href="resume.pdf" download class="download-btn">Download Resume</a>
+        </div>
+    </div>
+
+    <script>
+        function openResume() {
+            document.getElementById('mainPage').style.display = 'none';
+            document.getElementById('resumePage').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
